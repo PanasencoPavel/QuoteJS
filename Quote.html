@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 class="head"> Random Quote Generator</h1>
+	<h2 class="head2">Keep your mind fitted.............LAZY ASS!!!!!!</h2>
+	<button class="button" onclick="common()">New Quote</button>
+	<div class="quote">
+		<p id="quote1"></p>
+		<p id="author" style="font-family: verdana; font-style: italic; " ></p>
+</div>
+	<script>
+		var quote1 = ['There is some good in this world, and it’s worth fighting for.','Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.','Well-behaved women seldom make history.','It is better to be hated for what you are than to be loved for what you are not.','Who, being loved, is poor?','Every human life is worth the same, and worth saving.','Get busy living, or get busy dying.','The goal isn’t to live forever, the goal is to create something that will.']
+		var author = ['Mi6a','kolea','Jeka','Brinza','Ke6a','Varikoz','Kostior','Nejinka']
+
+/* 
+		function getRndInteger() {
+			return Math.floor(Math.random()*7);
+		}
+
+		function phrase() {
+			var i=getRndInteger();
+			return quote[i];
+		}
+
+		function changeQuote(){
+			document.getElementById('quote').innerHTML = phrase();
+		}
+*/
+		function common(){
+			var i= Math.floor(Math.random()*7); 
+			var x = quote1[i];
+			var n = author[i];
+
+			document.getElementById('quote1').innerHTML = x;
+			document.getElementById('author').innerHTML = n;
+
+		}
+
+	</script>
+</body>
+</html>
